@@ -1,10 +1,10 @@
 #! /bin/bash
 
-date01=`date +%m%d`  # 띄워쓰기 주의
+TODAYDATE=`date +%Y%m%d`  # 띄워쓰기 주의
 
-echo $date01
+echo $TODAYDATE
 
-expr $date01 - 2
+#expr $date01 - 2
 
 DAY1=`date -d '1 day ago' +'%Y%m%d'`
 echo $DAY1
