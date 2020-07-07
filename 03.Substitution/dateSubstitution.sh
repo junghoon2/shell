@@ -1,5 +1,6 @@
 #! /bin/bash
 
+# 명령어 수행 결과를 변수로 저장
 TODAYDATE=`date +%Y%m%d`  # 띄워쓰기 주의
 
 echo $TODAYDATE

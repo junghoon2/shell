@@ -21,8 +21,10 @@ echo ${SERVERLIST[*]}
 # array는 항상 ${}로 받는다. 집합은 {} 사용한다. 
 # @는 전체를 의미 또는 *
 # @ 개별 하나하나를 의미 가능 
+
 # for i in "${SERVERLIST[*]}"
 for i in "${SERVERLIST[@]}"
+#for i in "$SERVERLIST", 변수만 지정하면 안되네. 
 do 
   echo "Processing Server: $i"
 done

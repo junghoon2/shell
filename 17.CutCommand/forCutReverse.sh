@@ -1,5 +1,6 @@
 #! /bin/bash
 
+# rev 사용하면 라인을 거꾸로 가능 
 FILES=`ls -al *.sh |rev|cut -d " " -f 1|rev`
 
 # for list 항목으로 [@] 하지 않는다. 
@@ -10,3 +11,4 @@ FILES=`ls -al *.sh |rev|cut -d " " -f 1|rev`
 for FILE in $FILES; do
   printf "$FILE \n"
 done
+
