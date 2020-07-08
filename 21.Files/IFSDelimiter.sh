@@ -1,17 +1,20 @@
 #! /bin/bash
 
-echo "Enter the file name: "
+# Print out file with delimiter 
+
+printf "Input the file name: \n"
 read FILE
 
-echo "Enter the Delimiter: "
+printf "Input the file delimiter: \n"
 read DELIM
 
+# remove white space 하는 습관
 IFS="read -r $DELIM"
+#IFS=$DELIM
 
+# Read file
 while read -r CPU MEMORY DISK; do
-  echo "CPU: $CPU"
-  echo "MEMORY: $MEMORY"
-  echo "DISK: $DISK"
-done < "$FLIE"
-
-# File에 delimiter 순서대로 내용을 쓰는 방법은?
+  printf "CPU is: $CPU \n"
+  printf "MEMORY is: $MEMORY \n"
+  printf "DISK is: $DISK \n"
+done < $FILE

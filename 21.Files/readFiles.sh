@@ -11,6 +11,7 @@ read FILE
 # 이걸 python에서는 어떻게 작성할 수 있을까? 
 
 # Line 별로 출력 가능
+# for가 아니라 while 사용한다.
 while read -r LINE; do 
   echo "The each line is : $LINE"
 done < $FILE
