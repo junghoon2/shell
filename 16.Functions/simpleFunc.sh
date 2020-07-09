@@ -13,3 +13,5 @@ funcExample() {
 
 # Call function 할 때 인자, () 안 넣어주네.
 funcExample # not ()
+
+echo "SC test"
