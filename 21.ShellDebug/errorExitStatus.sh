@@ -7,6 +7,7 @@ DIRECTORY=$1
 echo "change into a directory and list the contents"
 cd $DIRECTORY 2> /dev/null
 
+# $? 실행 결과를 기준으로 error 처리 가능
 if [ "$?" == "0" ]; then
   # echo "Success to enter into the directory"
   echo "We can change into the directory $DIRECTORY, and here are the contents"

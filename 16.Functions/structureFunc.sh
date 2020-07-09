@@ -20,7 +20,10 @@ funcExamples () {
   echo "This is an example"
 }
 
+# End of function
+
 # begining of the scripts
 # 가독성을 위해서 echo comment 달아주는 습관을 가지는 게 좋다.
 echo "This is func call start..."
+
 funcExamples
